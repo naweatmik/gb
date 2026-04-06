@@ -517,24 +517,25 @@
 
     .cmp-tbl th,
     .cmp-tbl td {
-      padding: 1.1rem 1rem;
+      padding: 1.5rem 1.4rem;
       vertical-align: top;
       border-bottom: 1px solid var(--rule);
       border-right: 1px solid var(--rule);
-      font-size: 0.82rem;
-      line-height: 1.75;
+      font-size: 0.84rem;
+      line-height: 1.8;
       word-break: keep-all;
       overflow-wrap: break-word;
     }
 
     .cmp-tbl th {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       letter-spacing: 2.5px;
       font-weight: 400;
       border-bottom: 1px solid var(--rule-hv);
       background: var(--cream3);
       word-break: keep-all;
+      padding: 1.2rem 1.4rem;
     }
 
     .cmp-tbl td:last-child,
@@ -551,33 +552,34 @@
     }
 
     .th-cat {
-      width: 108px;
+      width: 148px;
       color: var(--ink3);
     }
 
     .th-nat {
-      width: calc(50% - 54px);
+      width: calc(50% - 74px);
       color: var(--blue);
     }
 
     .th-reg {
-      width: calc(50% - 54px);
+      width: calc(50% - 74px);
       color: var(--red);
     }
 
     .td-cat {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.78rem;
       letter-spacing: 1.5px;
       color: var(--ink3);
       word-break: keep-all;
       text-align: center;
+      vertical-align: middle;
     }
 
     .td-nat,
     .td-reg {
       color: var(--ink2);
-      padding: 1rem 1rem;
+      padding: 1.5rem 1.4rem;
     }
 
     .badge {
@@ -730,10 +732,6 @@
     }
 
     .apply-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 6rem;
-      align-items: start;
     }
 
     .apply-ttl {
@@ -750,7 +748,7 @@
       font-weight: 900;
       color: var(--red);
       -webkit-text-stroke: 0;
-      display: block;
+      display: inline;
       line-height: 1.0;
       letter-spacing: -0.02em;
       position: relative;
@@ -859,9 +857,8 @@
 
     /* ── REVEAL ── */
     .rv {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity .65s ease, transform .65s ease;
+      opacity: 1;
+      transform: none;
     }
 
     .rv.in {
@@ -926,11 +923,6 @@
         grid-template-columns: 1fr;
       }
 
-      .apply-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-
       .cur-row {
         grid-template-columns: 3.5rem 1fr;
       }
@@ -956,8 +948,7 @@
       <li><a href="#curriculum">커리큘럼</a></li>
       <li><a href="#apply">신청</a></li>
     </ul>
-    <button class="nav-btn" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">과정 도입
-      문의</button>
+
   </nav>
 
 
@@ -998,12 +989,7 @@
             <dd>1인 이상 신청 가능</dd>
           </div>
         </dl>
-        <div class="cta-row">
-          <button class="btn-fill" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">과정 도입
-            문의하기</button>
-          <button class="btn-outline"
-            onclick="document.getElementById('compare').scrollIntoView({behavior:'smooth'})">과정 비교 보기</button>
-        </div>
+
       </div>
     </div>
     <div class="hero-bar rv">
@@ -1045,38 +1031,38 @@
   <!-- OVERVIEW -->
   <section id="overview">
     <div class="inner">
-      <p class="s-lbl rv">Course Overview</p>
-      <h2 class="s-ttl rv">과정 개요<br><span class="serif">한눈에 보기</span></h2>
+      <p class="s-lbl rv">Who Should Apply</p>
+      <h2 class="s-ttl rv">모집 대상<br><span class="serif">이런 분께 딱입니다</span></h2>
       <div class="ov-grid rv">
         <div class="ov-cell">
-          <div class="ov-num">42<sup>h</sup></div>
-          <div class="ov-name">UX · 서비스 설계</div>
-          <div class="ov-sub">사용자 조사 · 시나리오 · 와이어프레임 · 프로토타입 집중 설계</div>
+          <div class="ov-num">01</div>
+          <div class="ov-name">디자인 입문자</div>
+          <div class="ov-sub">그래픽 · UI 디자인을 처음 시작하는 분 — Photoshop · Illustrator · Figma를 체계적으로 배우고 싶은 분</div>
         </div>
         <div class="ov-cell">
-          <div class="ov-num">52<sup>h</sup></div>
-          <div class="ov-name">디자인 제작</div>
-          <div class="ov-sub">컬러 · 타이포그래피 · 레이아웃 · UI 컴포넌트 시각 완성</div>
+          <div class="ov-num">02</div>
+          <div class="ov-name">취업 준비생</div>
+          <div class="ov-sub">UX/UI 디자이너 · 웹 퍼블리셔 · 프론트엔드 개발자로 취업을 목표로 하는 분</div>
         </div>
         <div class="ov-cell">
-          <div class="ov-num">33<sup>W</sup></div>
-          <div class="ov-name">총 훈련 기간</div>
-          <div class="ov-sub">약 6개월 완성형 커리큘럼 · 2025.05.14 – 2026.09.29</div>
+          <div class="ov-num">03</div>
+          <div class="ov-name">직무 전환 희망자</div>
+          <div class="ov-sub">타 직종에서 디자인 · 웹 분야로 커리어를 전환하고 싶은 분 · 실무 포트폴리오가 필요한 분</div>
         </div>
         <div class="ov-cell">
-          <div class="ov-num">16<sup>명</sup></div>
-          <div class="ov-name">소규모 정원</div>
-          <div class="ov-sub">밀착 피드백 · 1:1 지도 · 높은 수료율 보장</div>
+          <div class="ov-num">04</div>
+          <div class="ov-name">재직자 · 프리랜서</div>
+          <div class="ov-sub">현업 역량을 높이고 싶은 재직자 · 쇼핑몰 운영 · 상세페이지 제작 능력이 필요한 분</div>
         </div>
         <div class="ov-cell">
-          <div class="ov-num">12<sup>+</sup></div>
-          <div class="ov-name">포트폴리오</div>
-          <div class="ov-sub">실전 프로젝트 12개 이상 — 취업 즉시 활용 가능</div>
+          <div class="ov-num">05</div>
+          <div class="ov-name">1인 창업 · 소상공인</div>
+          <div class="ov-sub">직접 브랜딩 · 홈페이지 · 카페24 쇼핑몰을 구축하고 운영하고 싶은 분</div>
         </div>
         <div class="ov-cell dark">
-          <div class="ov-num">30<sup>만</sup></div>
-          <div class="ov-name">수강료 (자부담)</div>
-          <div class="ov-sub">훈련비의 일부만 자부담 — 나머지는 국비 지원으로 충당</div>
+          <div class="ov-num">선수</div>
+          <div class="ov-name">선수과목 이수 권장</div>
+          <div class="ov-sub">Photoshop · Illustrator 기초 이수 권장 — 미이수자는 사전 상담 후 수강 가능</div>
         </div>
       </div>
     </div>
@@ -1265,20 +1251,7 @@
           <div class="cr-chip-wrap"><span class="cr-chip">React</span></div>
         </div>
 
-        <div class="cur-row">
-          <div class="cr-n">08</div>
-          <div class="cr-body">
-            <div class="cr-stage" style="color:#0D6E5A;">AI 활용 · 포트폴리오 완성</div>
-            <div class="cr-title">AI 노코드 도구 활용 · 포트폴리오 12개 이상 완성 · 최종 발표</div>
-            <div class="cr-desc">
-              AI 기초 방법론 · 노코드 툴 실습 (Framer · Webflow 등 활용)<br>
-              업무 효율화 · AI 기반 디자인 보조 도구 실습<br>
-              포트폴리오 1·2 완성 · 케이스 스터디 정리 · 최종 검토<br>
-              취업 포트폴리오 완성 발표 · 피드백 · 수료
-            </div>
-          </div>
-          <div class="cr-chip-wrap"><span class="cr-chip">AI · Portfolio</span></div>
-        </div>
+
 
       </div>
     </div>
@@ -1315,13 +1288,12 @@
   <!-- APPLY -->
   <section id="apply">
     <div class="inner">
-      <p class="s-lbl rv">Apply Now</p>
+
       <div class="apply-grid">
         <div class="rv">
           <div class="apply-ttl">
-            비용 없이<br>
-            <span class="serif">인재를</span>
-            키우세요
+            <span style="display:block;">비용 없이</span>
+            <span class="serif" style="display:inline;">인재를</span> 키우세요
           </div>
           <p class="apply-desc">
             자부담 30만원으로 6개월 완성형 커리큘럼.<br>
@@ -1330,19 +1302,7 @@
           </p>
 
         </div>
-        <div class="rv">
-          <div class="apply-info">
-            <div class="ai-row"><span class="ai-k">훈련 기간</span><span class="ai-v">2025.05.14 – 2026.09.29</span></div>
-            <div class="ai-row"><span class="ai-k">총 기간</span><span class="ai-v">약 33주 / 6개월</span></div>
-            <div class="ai-row"><span class="ai-k">정원</span><span class="ai-v">16명 선착순 마감</span></div>
-            <div class="ai-row"><span class="ai-k">수강료 (자부담)</span><span class="ai-v red">30만원 (나머지 국비 지원)</span></div>
-            <div class="ai-row"><span class="ai-k">훈련 내용</span><span class="ai-v">UX · UI · HTML · CSS · JS ·
-                React · 웹디자인 · 앱디자인 · 상세페이지 </span></div>
-            <div class="ai-row"><span class="ai-k">선수과목</span><span class="ai-v">Photoshop · Illustrator 이수 권장</span>
-            </div>
-            <div class="ai-row"><span class="ai-k">과정 구분</span><span class="ai-v">NCS 국가기간전략산업직종</span></div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
